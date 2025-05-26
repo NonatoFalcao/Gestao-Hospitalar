@@ -31,7 +31,8 @@ def consulta_dados_paciente():
 
         if resultado:
             messagebox.showinfo("Resultado", f"Paciente:\n\nNome: {resultado[1]}\nNascimento: {resultado[2]}\nCPF: {resultado[3]}\
-                                \nSexo: {resultado[4]}\nTelefone: {resultado[5]}\nEndereço: {resultado[6]}")
+                                \nSexo: {resultado[4]}\nTelefone: {resultado[5]}\nEndereço: {resultado[6]}\nEmail: {resultado[7]}\
+                                \nTipo Sanguíneo: {resultado[8]}\nAlergias Conhecidas: {resultado[9]}")
         else:
             messagebox.showwarning("Não encontrado", "Paciente não encontrado! Tente novamente.")
             return
